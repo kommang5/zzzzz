@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <title>Document</title>
+  <style type="text/css">
+    h1{background-color:#f06; color:#fff;width:100px; height:200px;}
+    h2{background-color:#60f;}
+    p{background-color: #acc; display: inline;} /* block 형식*/
+      .box1{background-color: #caf;}
+      .box2{color:#fff;}
+    span{background-color: #fa0; width:500px; height: 500px;
+      display:block;}
+      /*inline 형식: size->x */
+    strong, em, ins, del{color:#90c;} /*inline 형식*/
+  </style>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <!-- id:단하나의 이름값을 가진다 -->
+  <!-- class:여러번 사용할 수 있다(하나의 태그에 여러개의 class이름을 가질 수 있다!)-->
+  <h1>제목을 표현하는 태그, 가장 중요한 제목: 전체문서에서 단 한번만 사용가능-사장님</h1>
+  <h2 id="one">두번째 중요한 제목:2번부터는 여러번 사용가능-이사</h2>
+  <h3 id="two">세번째 중요한 제목-부장</h3>
+  <h4 class="box2">네번째 중요한 제목-차장</h4>
+  <h5>다섯번재 중요한 제목:<span>-과장</span></h5>
+  <h6>마지막번째 중요한 제목 6까지밖에 없다-대리</h6>,<hr />
+  <!-- hr은 이전내용과 다음에 오는 내용의 분리하는 것 (흐름의 대한 전환)-->
+  <p>내용을 표현하는 태그(element:바디쪽에 쓰이는 용어)-사원</p>
+  <p>내용을 분리할때에는 문단과 문단으로 구분한다.
+  하지만 단순하게 내용을 줄바꿈을 할 경우에는 <br />
+  <!-- <br />뒤에 내용을 쓰면 줄바꿈이 된다.(단순한 줄바꿈이다) /<p>는 문단을 바꾼다-->
+  &lt;br /&gt; 태그를 사용한다.
+  </p>
+  <p>특수글자를 사용할시에는 &amp; &lt; &gt; &copy; </p>
+  <p class="box1 box2">
+  <!-- 이름주는 방법:
+                    1.첫글자:영문자 소문자
+                    2.띄어쓰기: x(또다른 이름의 형성)
+                    3.첫글자:  -->
+  문단을 나타내는 p태그는 줄바굼이 자동으로 되지 않는다 그러므로 <br />
+      띄어쓰기는 <span>하나이상</span> 적용되지 않는다.
+      <span>내용상 그룹을 표현하는 태그</span>
+      <span>의미없는 그룹의 역할을 한다</span>
+  </p>
+  <pre>이안에서는 띄어스기, 줄바꿈, 탭기능..등등
+        모든 내용이
+        보이는대로
+        적용된다!!!     ~!!
+        하지만 사용하지 않는다.
+  </pre>
+  <p>강조를 나타내는 태그가 있습니다.<br />
+    <span>
+    <b>bold</b>,
+    <i>italic</i>,
+    <u>underline</u>,
+    <s>strike</s>,
+    <strike>strike</strike>
+  </span>
+    b, i, u, s, strike 태그명을 실제로 사용하지 않는다.
+  </p>
+  <p> 실제 웹에서 사용하는 강조코드는 <br />
+    <strong>bold</strong>,
+    <em>italic</em>,
+    <ins>underline</ins>,
+    <del>strike</del>
+    b, i, u, s 의미가 없는 역할
+  </p>
+  <p>
+  <q>인용문-어디선가 말한 내용..(짦은 인용문을 적용할때)<br />
+  "네 자신을 알라!!"-소크라테스</q><br />
+  <cite>summary: 설명(작품의 제목을 정의-책,영화,티비쇼 등등을 설명할때_<p>태그안에 추가적인 내용을 쓴다)</cite><br />
+  <abbr title="hiper text markup language">HTML(앞에("") 설명을 쓰고 이렇게 부른다라고 정의함)</abbr><br />
+ </P>
+  <blockquote cite="http://여기에는 인용이 사용되 실제 주소를 쓰고">
+    여기에는 인용을 하고자하는 내용을 쓴다.
+  </blockquote>
+</body>
+</html>
